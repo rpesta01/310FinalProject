@@ -1,0 +1,23 @@
+<!-- Template for showing the results. -->
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<p class="fs-3 text-center">This is what {{ place }} sounds like!</p>
+<div class = "text-center">
+    <img src={{images}} alt="Waveform">
+</div>
+<br>
+<div class = "text-center">
+    <audio controls>
+        <source src={{sounds}} type="audio/mp3"
+    </audio>
+</div>
+
+{% endblock %}
+<!-- 
+    If you are not sure how to loop through
+    a list inside a template, take a look at
+    the first example in this page:
+    https://palletsprojects.com/p/jinja/
+-->
