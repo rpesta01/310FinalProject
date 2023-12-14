@@ -1,0 +1,26 @@
+<!-- Template containing the form  -->
+{% extends "base.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<form action="/submit-page" method="post">
+    <p class="text-center rounded-1">
+        <label for="water">Place</label>
+        <input type="text" id="water" name="water">
+    </p>
+    <p class="text-center">
+        <fieldset>
+            <div class="text-center">
+              <input type="checkbox" id="coord" name="coord" />
+              <label for="coord">Enter as coordinates (latitude, longitude)</label>
+            </div>
+        </fieldset>
+    </p>
+    <br>
+    <div class="container text-center">
+        <button type="submit" class="text-center btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endblock %}
